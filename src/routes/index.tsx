@@ -759,12 +759,9 @@ function Landing() {
             {landing.finalCta.titleLine2}
           </h2>
           <p className="mt-4 text-primary-foreground/85">{landing.finalCta.subtitle}</p>
-          <a
-            href={landing.checkoutUrl}
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-citrus px-8 py-5 text-base font-black text-secondary shadow-2xl transition hover:scale-[1.02] sm:text-lg"
-          >
-            {landing.finalCta.button} <ArrowRight className="h-5 w-5" />
-          </a>
+          <div className="mt-8 flex justify-center">
+            <HeroPrimaryCta href={landing.checkoutUrl} label={landing.finalCta.button} />
+          </div>
         </div>
       </section>
 
