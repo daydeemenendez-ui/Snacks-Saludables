@@ -1,0 +1,295 @@
+{
+  "checkoutUrl": "https://pay.hotmart.com/N101716991N?checkoutMode=10&hideBillet=1",
+  "brand": {
+    "logoAlt": "Crecimiento Integral",
+    "nameLine1": "CRECIMIENTO",
+    "nameLine2": "INTEGRAL"
+  },
+  "promoBar": {
+    "beforeHighlight": "OFERTA LIMITADA: Emprende con snacks saludables que ya se venden todos los días — ",
+    "highlight": "80% OFF solo hoy"
+  },
+  "nav": {
+    "buyNow": "Comprar ahora"
+  },
+  "hero": {
+    "badge": "Megapack 2026 · Edición Premium",
+    "titleBefore": "Emprende con el ",
+    "titleHighlight": "Megapack",
+    "titleMiddle": " de snacks saludables que ",
+    "titleEmphasis": "ya se venden",
+    "titleAfter": " todos los días.",
+    "subtitle": "Aprende a preparar barras, brownies y snacks caseros con presentación irresistible para ofrecer por pedido, WhatsApp o desde tu casa… incluso si empiezas desde cero.",
+    "ctaPrimary": "Quiero todo el pack hoy",
+    "socialProofBold": "+1.430",
+    "socialProofRest": "ya emprendieron",
+    "trust1": "Garantía 7 días",
+    "trust2": "Acceso inmediato",
+    "trust3": "Certificado incluido",
+    "imageAlt": "Megapack de barras y snacks saludables artesanales",
+    "priceCardBeforeLabel": "Antes",
+    "priceCardBeforeAmount": "$49 USD",
+    "priceCardTodayLabel": "Hoy",
+    "priceCardTodayAmount": "$7,90",
+    "floatingBadge": "80% OFF"
+  },
+  "marquee": {
+    "items": [
+      "Sin azúcar refinada",
+      "Sin químicos",
+      "Listo en 30 minutos",
+      "Ingredientes simples",
+      "Para vender por WhatsApp",
+      "Apto principiantes"
+    ]
+  },
+  "comparison": {
+    "eyebrow": "Dos caminos",
+    "headlineLine1": "Hoy puedes seguir comprando snacks…",
+    "headlineLine2Before": "o empezar a hacer los ",
+    "headlineAccent": "tuyos",
+    "headlineLine2After": ".",
+    "badTitle": "El que sigue comprando",
+    "badItems": [
+      "Compra productos caros y poco saludables",
+      "No sabe realmente qué está comiendo",
+      "Depende de opciones rápidas que no le hacen bien",
+      "Siente que comer saludable es difícil o aburrido"
+    ],
+    "goodPill": "Tu nuevo camino",
+    "goodTitle": "El que aprende a hacer sus propias barras",
+    "goodItems": [
+      "Prepara snacks saludables en casa, fáciles y rápidos",
+      "Controla los ingredientes y cuida su alimentación",
+      "Disfruta opciones ricas sin culpa ni complicaciones",
+      "Genera ingresos con algo tan simple como una receta"
+    ]
+  },
+  "recetario": {
+    "eyebrow": "El recetario",
+    "title": "Lo que descubrirás dentro",
+    "subtitle": "Recetas paso a paso para preparar snacks ricos, sin azúcar refinada, y con opción de vender desde casa.",
+    "cta": "Quiero mis barras saludables ahora",
+    "recipeMockupAltPrefix": "Mockup de receta",
+    "categories": [
+      {
+        "title": "Barras sin azúcar",
+        "image": "bar1",
+        "items": [
+          "Avena y mantequilla de maní",
+          "Dátiles y cacao",
+          "Nueces y semillas",
+          "Café y almendras",
+          "Proteína vegana"
+        ]
+      },
+      {
+        "title": "Barras para salud y equilibrio",
+        "image": "bar3",
+        "items": [
+          "Avena y arándanos",
+          "Manzana deshidratada y canela",
+          "Yogur y frutos secos",
+          "Chía y limón",
+          "Almendras y arándanos"
+        ]
+      },
+      {
+        "title": "Barras para antojo saludable",
+        "image": "bar4",
+        "items": [
+          "Chocolate negro y almendras",
+          "Plátano y avena horneada",
+          "Frutilla y avena",
+          "Brownie de cacao y dátiles"
+        ]
+      }
+    ]
+  },
+  "brownies": {
+    "imageAlt": "Recetario premium de barras saludables y brownies",
+    "badge": "También Incluye",
+    "titleBefore": "Recetario Premium de ",
+    "titleAccent": "Brownies",
+    "description": "Brownies saludables, esponjosos y con presentación irresistible, perfectos para disfrutar, compartir o agregar más variedad a tus pedidos.",
+    "bullets": [
+      "Textura y presentación que llaman la atención",
+      "Ideas para ofrecer más variedad y pedidos atractivos",
+      "Brownies ideales para cajas, packs y regalos",
+      "Más esponjosos, perfectos para vender por WhatsApp"
+    ]
+  },
+  "bonusesSection": {
+    "badge": "🎁 Bonos exclusivos",
+    "title": "¡Espera, eso no es todo!",
+    "introBefore": "Con tu compra te obsequiamos ",
+    "introStrong": "7 bonos increíbles",
+    "introAfter": " valuados en $49 USD. Tuyos hoy sin costo extra.",
+    "valueFreeLabel": "GRATIS",
+    "items": [
+      {
+        "n": 1,
+        "title": "10 recetas con Chocolate",
+        "desc": "Recetas de barras de chocolate saludables, deliciosas y fáciles.",
+        "value": "$7",
+        "image": "bonus1"
+      },
+      {
+        "n": 2,
+        "title": "Barras saludables para niños",
+        "desc": "Snacks que los niños disfrutan y las familias valoran.",
+        "value": "$7",
+        "image": "bonus2"
+      },
+      {
+        "n": 3,
+        "title": "Estrategias de venta",
+        "desc": "Tácticas de bajo costo para conseguir tus primeros clientes.",
+        "value": "$9",
+        "image": "bonus3"
+      },
+      {
+        "n": 4,
+        "title": "Toppings irresistibles",
+        "desc": "Ideas para que tus barras se destaquen y vendan más.",
+        "value": "$5",
+        "image": "bonus4"
+      },
+      {
+        "n": 5,
+        "title": "Galletas rápidas",
+        "desc": "Recetas para crear galletas nutritivas en minutos.",
+        "value": "$7",
+        "image": "bonus5"
+      },
+      {
+        "n": 6,
+        "title": "6 Glaseados sin azúcar",
+        "desc": "Decora tus barras y postres sin azúcar refinada.",
+        "value": "$5",
+        "image": "bonus6"
+      },
+      {
+        "n": 7,
+        "title": "Certificado digital",
+        "desc": "Reconocimiento con tu nombre al finalizar el recetario.",
+        "value": "$7",
+        "image": "bonus7"
+      }
+    ]
+  },
+  "benefits": [
+    {
+      "icon": "clock",
+      "title": "Listo en 20–30 min",
+      "desc": "Galletas de avena, barras y energy balls que se preparan en menos de media hora."
+    },
+    {
+      "icon": "trendingUp",
+      "title": "Convierte tu pasión en ingresos",
+      "desc": "Produce para eventos, cafeterías, cumpleaños — sin experiencia previa."
+    },
+    {
+      "icon": "leaf",
+      "title": "Nutrición sin engaños",
+      "desc": "Adiós a los ultraprocesados con azúcar y conservantes. 100% natural."
+    }
+  ],
+  "gallery": {
+    "eyebrow": "Lo que vas a aprender a crear",
+    "title": "Snacks que se ven —y se venden— solos.",
+    "imageKeys": ["bar1", "bar2", "bar3", "bar4", "bar5", "bar6"],
+    "imageAltPrefix": "Receta de barra saludable"
+  },
+  "price": {
+    "sectionId": "precio",
+    "badge": "Oferta por tiempo limitado",
+    "titleLine1": "Llévate todo el pack premium",
+    "titleLine2": "+ 7 bonos GRATIS",
+    "subtitle": "Pack completo con 8 ebooks · 54 recetas · acceso de por vida",
+    "includes": [
+      "Recetario Premium de Barras Saludables",
+      "Recetario Premium de Brownies",
+      "BONO 1: 10 recetas con chocolate",
+      "BONO 2: Toppings para barras",
+      "BONO 3: Estrategias de venta",
+      "BONO 4: Barras para niños",
+      "BONO 5: Galletas rápidas",
+      "BONO 6: 6 Glaseados sin azúcar",
+      "BONO 7: Certificado de finalización",
+      "Acceso inmediato y de por vida",
+      "Garantía 7 días",
+      "Soporte por WhatsApp"
+    ],
+    "beforeLabel": "Antes",
+    "beforeAmount": "$49 USD",
+    "discountLabel": "🔥 Precio con descuento",
+    "amount": "$7,90",
+    "currencySuffix": " USD",
+    "paymentNote": "Pago único · acceso de por vida",
+    "cta": "¡Comprar ahora y acceder al instante!",
+    "secureLine": "Compra 100% segura · Hotmart",
+    "deliveryLine": "📥 Entrega inmediata por correo",
+    "progressLabel": "1.430 personas ya se unieron",
+    "progressPercent": "83%"
+  },
+  "testimonials": {
+    "eyebrow": "Historias reales",
+    "title": "Conoce a quienes ya emprendieron",
+    "items": [
+      {
+        "name": "María, Lima",
+        "text": "En 2 semanas hice mis primeras ventas por WhatsApp. Las recetas son súper fáciles y mis clientes piden más."
+      },
+      {
+        "name": "Carolina, Bogotá",
+        "text": "Dejé los snacks de tienda. Ahora mi familia come mejor y además gano dinero extra desde mi cocina."
+      },
+      {
+        "name": "Ana, Santiago",
+        "text": "El bono de estrategias de venta vale el pack entero. Los toppings hacen ver mis barras profesionales."
+      }
+    ]
+  },
+  "guarantee": {
+    "imageAlt": "7 días de garantía",
+    "title": "Garantía de devolución",
+    "body": "Si no estás 100% satisfecho/a, te devolvemos todo tu dinero sin complicaciones. Tu compra está protegida por Hotmart."
+  },
+  "faq": {
+    "title": "¿Aún tienes alguna pregunta?",
+    "items": [
+      {
+        "q": "¿No tengo tarjeta, puedo pagar en efectivo?",
+        "a": "Sí. Si estás en Chile, Perú, Colombia o México puedes pagar en efectivo con un ticket manual (puede demorar hasta 48 h). También aceptamos tarjeta de débito habilitada para compras online."
+      },
+      {
+        "q": "¿En qué formato recibo el material?",
+        "a": "Todos los ebooks vienen en PDF descargable. Los lees desde celular, tablet o computadora apenas se confirme tu compra."
+      },
+      {
+        "q": "¿Necesito experiencia en cocina?",
+        "a": "No. Las recetas son fáciles, paso a paso, con ingredientes comunes y pensadas para principiantes."
+      },
+      {
+        "q": "¿Puedo usar las recetas para vender?",
+        "a": "Sí. El pack incluye estrategias de venta, ideas de presentación y toppings para que emprendas desde casa."
+      },
+      {
+        "q": "¿Cuándo recibo el acceso?",
+        "a": "El acceso es inmediato tras el pago con tarjeta. Llega a tu correo en segundos."
+      }
+    ]
+  },
+  "finalCta": {
+    "titleLine1": "No tienes nada que perder…",
+    "titleLine2": "y mucho que ganar.",
+    "subtitle": "Únete a las +1.430 personas que ya emprendieron desde casa.",
+    "button": "Yo también quiero empezar hoy"
+  },
+  "footer": {
+    "copyrightName": "Crecimiento Integral",
+    "copyrightSuffix": "· Todos los derechos reservados",
+    "finePrint": "Procesado por Hotmart · Compra 100% segura · Garantía 7 días"
+  }
+}
