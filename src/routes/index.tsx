@@ -463,13 +463,8 @@ function Landing() {
             </div>
           </div>
 
-          <div className="mt-12 text-center">
-            <a
-              href={priceHash}
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 text-base font-bold text-primary-foreground shadow-[var(--shadow-glow)] hover:scale-[1.02] transition"
-            >
-              {landing.recetario.cta} <ArrowRight className="h-5 w-5" />
-            </a>
+          <div className="mt-12 flex justify-center">
+            <HeroPrimaryCta href={priceHash} label={landing.recetario.cta} />
           </div>
         </div>
       </section>
