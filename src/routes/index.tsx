@@ -45,6 +45,12 @@ import recipe10 from "@/assets/recipes/recipe-184631.748.webp";
 import recipe11 from "@/assets/recipes/recipe-184719.313.webp";
 import recipe12 from "@/assets/recipes/recipe-184828.040.webp";
 import recipe13 from "@/assets/recipes/recipe-184923.867.webp";
+import avatar1 from "@/assets/avatars/avatar-1.jpg";
+import avatar2 from "@/assets/avatars/avatar-2.jpg";
+import avatar3 from "@/assets/avatars/avatar-3.jpg";
+import avatar4 from "@/assets/avatars/avatar-4.jpg";
+
+const heroAvatars = [avatar1, avatar2, avatar3, avatar4];
 
 const recipeMockups = [
   recipe1,
