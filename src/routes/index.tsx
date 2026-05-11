@@ -521,16 +521,24 @@ function Landing() {
       >
         <div className="mx-auto max-w-7xl px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex items-center gap-2 rounded-full bg-citrus px-3 py-1 text-xs font-black uppercase text-secondary">
+            <span className="inline-flex items-center gap-2 rounded-full bg-citrus px-4 py-1.5 text-sm font-black uppercase text-secondary sm:text-base">
               {landing.bonusesSection.badge}
             </span>
-            <h2 className="mt-4 font-display text-3xl font-black sm:text-5xl">
+            <h2 className="mt-4 font-display text-4xl font-black sm:text-6xl">
               {landing.bonusesSection.title}
             </h2>
-            <p className="mt-4 text-muted-foreground">
+            <p className="mt-5 text-lg text-muted-foreground sm:text-xl">
               {landing.bonusesSection.introBefore}
               <strong className="text-foreground">{landing.bonusesSection.introStrong}</strong>
-              {landing.bonusesSection.introAfter}
+              {" valuados en "}
+              <span className="font-bold text-destructive">$49 USD</span>
+              {"."}
+            </p>
+            <p className="mt-2 text-lg text-muted-foreground sm:text-xl">
+              Tuyos hoy sin costo extra.{" "}
+              <span className="font-bold text-primary">
+                Acceso inmediato a todo, ¡así de simple!
+              </span>
             </p>
           </div>
           <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
