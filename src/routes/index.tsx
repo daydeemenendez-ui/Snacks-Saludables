@@ -293,10 +293,15 @@ function Landing() {
               <HeroPrimaryCta href={priceHash} label={landing.hero.ctaPrimary} />
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div
+                  {heroAvatars.map((src, i) => (
+                    <img
                       key={i}
-                      className="h-7 w-7 rounded-full border-2 border-background bg-gradient-to-br from-accent to-primary"
+                      src={src}
+                      alt=""
+                      width={32}
+                      height={32}
+                      loading="lazy"
+                      className="h-7 w-7 rounded-full border-2 border-background object-cover"
                     />
                   ))}
                 </div>
