@@ -463,13 +463,8 @@ function Landing() {
             </div>
           </div>
 
-          <div className="mt-12 text-center">
-            <a
-              href={priceHash}
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 text-base font-bold text-primary-foreground shadow-[var(--shadow-glow)] hover:scale-[1.02] transition"
-            >
-              {landing.recetario.cta} <ArrowRight className="h-5 w-5" />
-            </a>
+          <div className="mt-12 flex justify-center">
+            <HeroPrimaryCta href={priceHash} label={landing.recetario.cta} />
           </div>
         </div>
       </section>
@@ -661,13 +656,9 @@ function Landing() {
                 <div className="mt-2 text-sm text-muted-foreground">
                   {landing.price.paymentNote}
                 </div>
-                <a
-                  href={landing.checkoutUrl}
-                  className="mt-7 inline-flex w-full max-w-md items-center justify-center gap-2 rounded-full px-8 py-5 text-base font-black text-primary-foreground shadow-[var(--shadow-glow)] transition hover:scale-[1.02] sm:text-lg"
-                  style={{ background: "var(--gradient-cta)" }}
-                >
-                  {landing.price.cta} <ArrowRight className="h-5 w-5" />
-                </a>
+                <div className="mt-7 flex justify-center">
+                  <HeroPrimaryCta href={landing.checkoutUrl} label={landing.price.cta} />
+                </div>
                 <div className="mt-5 flex flex-wrap items-center justify-center gap-4 text-xs text-muted-foreground">
                   <span className="flex items-center gap-1.5">
                     <ShieldCheck className="h-4 w-4 text-primary" /> {landing.price.secureLine}
@@ -768,12 +759,9 @@ function Landing() {
             {landing.finalCta.titleLine2}
           </h2>
           <p className="mt-4 text-primary-foreground/85">{landing.finalCta.subtitle}</p>
-          <a
-            href={landing.checkoutUrl}
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-citrus px-8 py-5 text-base font-black text-secondary shadow-2xl transition hover:scale-[1.02] sm:text-lg"
-          >
-            {landing.finalCta.button} <ArrowRight className="h-5 w-5" />
-          </a>
+          <div className="mt-8 flex justify-center">
+            <HeroPrimaryCta href={landing.checkoutUrl} label={landing.finalCta.button} />
+          </div>
         </div>
       </section>
 
