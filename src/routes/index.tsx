@@ -289,7 +289,7 @@ function Landing() {
             <p className="mt-6 max-w-xl text-base text-muted-foreground sm:text-lg">
               {landing.hero.subtitle}
             </p>
-            <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+            <div className="mt-8 flex flex-col items-start gap-4">
               <HeroPrimaryCta href={priceHash} label={landing.hero.ctaPrimary} />
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <div className="flex -space-x-2">
