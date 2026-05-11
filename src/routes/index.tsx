@@ -222,13 +222,15 @@ function Landing() {
   return (
     <div className="min-h-screen overflow-x-hidden">
       <div className="bg-secondary text-secondary-foreground">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-1 px-8 sm:px-12 lg:px-16 py-2.5 text-center text-xs font-medium sm:text-sm">
-          <div className="flex items-center justify-center gap-2">
-            <Zap className="h-4 w-4 fill-citrus text-citrus" />
-            {landing.promoBar.beforeHighlight}
-            <span className="text-citrus font-bold">{landing.promoBar.highlight}</span>
-          </div>
-          <div className="font-bold tracking-wider text-citrus">{landing.promoBar.secondLine}</div>
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-1 px-4 sm:px-12 lg:px-16 py-2.5 text-center text-[11px] leading-snug font-medium sm:text-sm">
+          <p className="flex items-center justify-center gap-1.5 flex-wrap text-balance">
+            <Zap className="h-3.5 w-3.5 shrink-0 fill-citrus text-citrus" />
+            <span>
+              {landing.promoBar.beforeHighlight}
+              <span className="text-citrus font-bold">{landing.promoBar.highlight}</span>
+            </span>
+          </p>
+          <div className="font-bold tracking-wider text-citrus text-[10px] sm:text-sm">{landing.promoBar.secondLine}</div>
         </div>
       </div>
 
