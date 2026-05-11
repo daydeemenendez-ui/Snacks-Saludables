@@ -83,7 +83,6 @@ const images = {
   bonus4,
   bonus5,
   bonus6,
-  bonus6,
 } as const;
 
 type ImageKey = keyof typeof images;
