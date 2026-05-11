@@ -235,14 +235,14 @@ function Landing() {
       </div>
 
       <header className="sticky top-0 z-40 backdrop-blur-xl bg-background/70 border-b border-border/60">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-8 sm:px-12 lg:px-16 py-4">
-          <a href="#" className="flex items-center gap-3">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 sm:px-12 lg:px-16 py-3 sm:py-4">
+          <a href="#" className="flex items-center gap-2 sm:gap-3">
             <img
               src={logoIsotipo}
               alt={landing.brand.logoAlt}
-              className="h-11 w-11 object-contain"
+              className="h-8 w-8 sm:h-11 sm:w-11 object-contain"
             />
-            <span className="font-display text-base font-bold leading-tight tracking-tight text-secondary sm:text-lg">
+            <span className="font-display text-[11px] sm:text-lg font-bold leading-tight tracking-tight text-secondary">
               {landing.brand.nameLine1}
               <br className="sm:hidden" />{" "}
               <span className="text-accent">{landing.brand.nameLine2}</span>
@@ -250,10 +250,10 @@ function Landing() {
           </a>
           <a
             href={priceHash}
-            className="group inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-semibold text-background transition hover:bg-primary"
+            className="group inline-flex items-center gap-1.5 sm:gap-2 rounded-full bg-foreground px-3 py-2 sm:px-5 sm:py-2.5 text-[11px] sm:text-sm font-semibold text-background transition hover:bg-primary whitespace-nowrap"
           >
             {landing.nav.buyNow}{" "}
-            <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
+            <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 transition group-hover:translate-x-0.5" />
           </a>
         </div>
       </header>
