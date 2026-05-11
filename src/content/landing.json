@@ -7,7 +7,8 @@
   },
   "promoBar": {
     "beforeHighlight": "Come sin culpa y genera ingresos desde tu cocina — ",
-    "highlight": "con 80% OFF hoy"
+    "highlight": "con 80% OFF solo hoy",
+    "secondLine": "OFERTA LIMITADA"
   },
   "nav": {
     "buyNow": "Comprar ahora"
