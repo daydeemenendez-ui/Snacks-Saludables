@@ -200,7 +200,8 @@
   ],
   "gallery": {
     "eyebrow": "Lo que vas a aprender a crear",
-    "title": "Snacks que se ven —y se venden— solos.",
+    "title": "Prepara snacks caseros que se ven ricos, saludables y listos para ofrecer",
+    "subtitle": "Barras, brownies y barras con chocolate, snacks fáciles de preparar, con ingredientes simples y una presentación que provoca comprar.",
     "imageKeys": ["bar1", "bar2", "bar3", "bar4", "bar5", "bar6"],
     "imageAltPrefix": "Receta de barra saludable"
   },
