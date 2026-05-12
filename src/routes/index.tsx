@@ -680,6 +680,9 @@ function Landing() {
             <h2 className="mt-3 font-display text-3xl font-black sm:text-5xl">
               {landing.gallery.title}
             </h2>
+            <p className="mt-4 text-base sm:text-lg text-secondary-foreground/80">
+              {landing.gallery.subtitle}
+            </p>
           </div>
           <div className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
             {galleryImages.map((src, i) => (
