@@ -824,6 +824,44 @@ function Landing() {
             </figure>
           ))}
         </div>
+
+        <div className="mt-14">
+          <Carousel
+            opts={{ loop: true, align: "start" }}
+            plugins={[Autoplay({ delay: 3500, stopOnInteraction: false, stopOnMouseEnter: true })]}
+            className="mx-auto max-w-5xl"
+          >
+            <CarouselContent>
+              {testimonioImgs.map((src, i) => (
+                <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="overflow-hidden rounded-2xl ring-1 ring-border bg-card shadow-[var(--shadow-soft)]">
+                    <img
+                      src={src}
+                      alt={`Captura de testimonio real ${i + 1}`}
+                      loading="lazy"
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+      </section>
+              <div className="flex gap-1 text-citrus">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <Star key={i} className="h-4 w-4 fill-current" />
+                ))}
+              </div>
+              <blockquote className="mt-4 text-foreground">"{t.text}"</blockquote>
+              <figcaption className="mt-4 text-sm font-semibold text-muted-foreground">
+                — {t.name}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
       </section>
 
       <section className="mx-auto max-w-5xl px-8 sm:px-12 lg:px-16 pb-20">
