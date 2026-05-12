@@ -33,6 +33,11 @@ import bonus5 from "@/assets/bonus-5.webp";
 import bonus6 from "@/assets/bonus-6.webp";
 import certificateImg from "@/assets/certificate.png";
 import packMockup from "@/assets/pack-mockup.png";
+import testimonio1 from "@/assets/testimonios/t-231526.678.jpg";
+import testimonio2 from "@/assets/testimonios/t-231642.153.jpg";
+import testimonio3 from "@/assets/testimonios/t-231801.217.jpg";
+import testimonio4 from "@/assets/testimonios/t-231859.647.jpg";
+import testimonio5 from "@/assets/testimonios/t-232056.895.jpg";
 import recipe1 from "@/assets/recipes/recipe-182126.394.webp";
 import recipe2 from "@/assets/recipes/recipe-182308.416.webp";
 import recipe3 from "@/assets/recipes/recipe-182544.478.webp";
@@ -50,8 +55,11 @@ import avatar1 from "@/assets/avatars/avatar-1.jpg";
 import avatar2 from "@/assets/avatars/avatar-2.jpg";
 import avatar3 from "@/assets/avatars/avatar-3.jpg";
 import avatar4 from "@/assets/avatars/avatar-4.jpg";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const heroAvatars = [avatar1, avatar2, avatar3, avatar4];
+const testimonioImgs = [testimonio1, testimonio2, testimonio3, testimonio4, testimonio5];
 
 const recipeMockups = [
   recipe1,
@@ -815,6 +823,31 @@ function Landing() {
               </figcaption>
             </figure>
           ))}
+        </div>
+
+        <div className="mt-14">
+          <Carousel
+            opts={{ loop: true, align: "start" }}
+            plugins={[Autoplay({ delay: 3500, stopOnInteraction: false, stopOnMouseEnter: true })]}
+            className="mx-auto max-w-5xl"
+          >
+            <CarouselContent>
+              {testimonioImgs.map((src, i) => (
+                <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="overflow-hidden rounded-2xl ring-1 ring-border bg-card shadow-[var(--shadow-soft)]">
+                    <img
+                      src={src}
+                      alt={`Captura de testimonio real ${i + 1}`}
+                      loading="lazy"
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
 
