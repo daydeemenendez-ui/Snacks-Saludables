@@ -850,19 +850,6 @@ function Landing() {
           </Carousel>
         </div>
       </section>
-              <div className="flex gap-1 text-citrus">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <Star key={i} className="h-4 w-4 fill-current" />
-                ))}
-              </div>
-              <blockquote className="mt-4 text-foreground">"{t.text}"</blockquote>
-              <figcaption className="mt-4 text-sm font-semibold text-muted-foreground">
-                — {t.name}
-              </figcaption>
-            </figure>
-          ))}
-        </div>
-      </section>
 
       <section className="mx-auto max-w-5xl px-8 sm:px-12 lg:px-16 pb-20">
         <div className="flex flex-col items-center gap-8 rounded-[2rem] bg-secondary p-8 text-secondary-foreground sm:p-12 text-center">
