@@ -829,18 +829,10 @@ function Landing() {
                   <span>·</span>
                   <span>{landing.price.deliveryLine}</span>
                 </div>
-                <div className="mt-6">
-                  <div className="mb-1 flex justify-between text-xs text-muted-foreground">
-                    <span>{landing.price.progressLabel}</span>
-                    <span className="font-bold text-primary">{landing.price.progressPercent}</span>
-                  </div>
-                  <div className="h-2 w-full overflow-hidden rounded-full bg-border">
-                    <div
-                      className="h-full rounded-full bg-primary"
-                      style={{ width: landing.price.progressPercent }}
-                    />
-                  </div>
-                </div>
+                <AnimatedProgress
+                  target={parseInt(landing.price.progressPercent, 10) || 83}
+                  label={landing.price.progressLabel}
+                />
               </div>
             </div>
           </div>
