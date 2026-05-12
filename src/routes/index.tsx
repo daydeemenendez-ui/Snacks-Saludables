@@ -1,4 +1,51 @@
-import { useRef, useState, type PointerEvent } from "react";
+import { useEffect, useRef, useState, type PointerEvent } from "react";
+
+function AnimatedProgress({ target, label }: { target: number; label: string }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [value, setValue] = useState(0);
+  const started = useRef(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting && !started.current) {
+            started.current = true;
+            const duration = 1600;
+            const start = performance.now();
+            const tick = (now: number) => {
+              const t = Math.min(1, (now - start) / duration);
+              const eased = 1 - Math.pow(1 - t, 3);
+              setValue(Math.round(eased * target));
+              if (t < 1) requestAnimationFrame(tick);
+            };
+            requestAnimationFrame(tick);
+          }
+        });
+      },
+      { threshold: 0.4 },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [target]);
+
+  return (
+    <div ref={ref} className="mt-6">
+      <div className="mb-1 flex justify-between text-xs text-muted-foreground">
+        <span>{label}</span>
+        <span className="font-bold text-primary">{value}%</span>
+      </div>
+      <div className="h-2 w-full overflow-hidden rounded-full bg-border">
+        <div
+          className="h-full rounded-full bg-primary transition-[width] duration-100 ease-out"
+          style={{ width: `${value}%` }}
+        />
+      </div>
+    </div>
+  );
+}
 import { createFileRoute } from "@tanstack/react-router";
 import {
   Check,
@@ -782,18 +829,10 @@ function Landing() {
                   <span>·</span>
                   <span>{landing.price.deliveryLine}</span>
                 </div>
-                <div className="mt-6">
-                  <div className="mb-1 flex justify-between text-xs text-muted-foreground">
-                    <span>{landing.price.progressLabel}</span>
-                    <span className="font-bold text-primary">{landing.price.progressPercent}</span>
-                  </div>
-                  <div className="h-2 w-full overflow-hidden rounded-full bg-border">
-                    <div
-                      className="h-full rounded-full bg-primary"
-                      style={{ width: landing.price.progressPercent }}
-                    />
-                  </div>
-                </div>
+                <AnimatedProgress
+                  target={parseInt(landing.price.progressPercent, 10) || 83}
+                  label={landing.price.progressLabel}
+                />
               </div>
             </div>
           </div>
