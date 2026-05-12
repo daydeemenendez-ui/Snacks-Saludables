@@ -725,6 +725,16 @@ function Landing() {
                 {landing.price.titleLine2}
               </h2>
               <p className="mt-4 text-primary-foreground/85">{landing.price.subtitle}</p>
+              <div className="mt-8 flex justify-center">
+                <img
+                  src={packMockup}
+                  alt="Mockup del pack completo: 8 ebooks de barras saludables, brownies y galletas"
+                  width={1000}
+                  height={800}
+                  loading="lazy"
+                  className="w-full max-w-2xl rounded-2xl shadow-2xl ring-1 ring-white/20"
+                />
+              </div>
             </div>
 
             <div className="p-8 sm:p-12">
