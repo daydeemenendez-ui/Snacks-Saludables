@@ -577,6 +577,80 @@ function Landing() {
         </div>
       </section>
 
+      <section className="relative overflow-hidden py-20">
+        <div
+          className="absolute inset-0 -z-10 opacity-90"
+          style={{ background: "var(--gradient-warm)" }}
+          aria-hidden="true"
+        />
+        <div
+          className="pointer-events-none absolute -top-32 -right-32 -z-10 h-96 w-96 rounded-full opacity-30 blur-3xl"
+          style={{ background: "var(--gradient-cta)" }}
+          aria-hidden="true"
+        />
+        <div
+          className="pointer-events-none absolute -bottom-40 -left-32 -z-10 h-96 w-96 rounded-full opacity-25 blur-3xl"
+          style={{ background: "var(--gradient-cta-accent)" }}
+          aria-hidden="true"
+        />
+        <div className="mx-auto max-w-6xl px-6 sm:px-10 lg:px-16">
+          <div className="rounded-[2rem] border border-border/60 bg-card/80 p-6 shadow-[var(--shadow-soft)] backdrop-blur-sm sm:p-10 lg:p-14">
+            <div className="grid items-center gap-10 lg:grid-cols-2">
+              <div className="relative order-2 lg:order-1">
+                <div
+                  className="absolute -inset-4 -z-10 rounded-[2rem] opacity-40 blur-2xl"
+                  style={{ background: "var(--gradient-cta)" }}
+                  aria-hidden="true"
+                />
+                <div className="relative animate-float">
+                  <img
+                    src={certificateImg}
+                    alt={landing.certificate.imageAlt}
+                    loading="lazy"
+                    width={1024}
+                    height={1024}
+                    className="w-full rounded-2xl drop-shadow-2xl"
+                  />
+                </div>
+                <div
+                  className="absolute -bottom-4 -right-4 grid h-20 w-20 place-items-center rounded-full text-primary-foreground shadow-[var(--shadow-glow)] sm:h-24 sm:w-24"
+                  style={{ background: "var(--gradient-cta-accent)" }}
+                  aria-hidden="true"
+                >
+                  <span className="font-display text-xs font-black leading-tight text-center sm:text-sm">
+                    BONO
+                    <br />
+                    EXTRA
+                  </span>
+                </div>
+              </div>
+              <div className="order-1 lg:order-2">
+                <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary ring-1 ring-primary/20">
+                  {landing.certificate.eyebrow}
+                </div>
+                <h2 className="mt-4 font-display text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">
+                  {landing.certificate.title}
+                </h2>
+                <p className="mt-5 text-base text-muted-foreground sm:text-lg">
+                  {landing.certificate.body}
+                </p>
+                <div className="mt-7 inline-flex flex-wrap items-center gap-3 rounded-2xl border border-primary/30 bg-primary/5 px-5 py-3">
+                  <span className="text-sm font-bold uppercase tracking-wide text-foreground">
+                    {landing.certificate.valueBefore}
+                  </span>
+                  <span className="text-base font-bold text-destructive line-through">
+                    {landing.certificate.valueAmount}
+                  </span>
+                  <span className="rounded-full bg-primary px-3 py-1 text-xs font-black uppercase text-primary-foreground">
+                    {landing.certificate.valueAfter}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-7xl px-8 sm:px-12 lg:px-16 py-20">
         <div className="grid gap-8 md:grid-cols-3">
           {landing.benefits.map(({ icon, title, desc }) => {
