@@ -32,6 +32,7 @@ import bonus4 from "@/assets/bonus-4.webp";
 import bonus5 from "@/assets/bonus-5.webp";
 import bonus6 from "@/assets/bonus-6.webp";
 import certificateImg from "@/assets/certificate.png";
+import packMockup from "@/assets/pack-mockup.png";
 import recipe1 from "@/assets/recipes/recipe-182126.394.webp";
 import recipe2 from "@/assets/recipes/recipe-182308.416.webp";
 import recipe3 from "@/assets/recipes/recipe-182544.478.webp";
