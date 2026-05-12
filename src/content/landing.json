@@ -169,15 +169,17 @@
         "desc": "Decora tus barras y postres sin azúcar refinada.",
         "value": "$5",
         "image": "bonus6"
-      },
-      {
-        "n": 7,
-        "title": "Certificado digital",
-        "desc": "Reconocimiento con tu nombre al finalizar el recetario.",
-        "value": "$7",
-        "image": "bonus7"
       }
     ]
+  },
+  "certificate": {
+    "eyebrow": "🎓 Bono especial",
+    "title": "ADEMÁS, vas a llevarte un certificado de FINALIZACIÓN",
+    "body": "Al finalizar el Recetario Premium de Barras Sin Azúcar, recibirás un certificado digital de finalización con tu nombre, un reconocimiento a tu compromiso y un respaldo que puedes compartir como logro personal o profesional.",
+    "valueBefore": "VALOR",
+    "valueAmount": "$7,00 USD",
+    "valueAfter": "Hoy Gratis",
+    "imageAlt": "Certificado digital de finalización con tu nombre"
   },
   "benefits": [
     {
