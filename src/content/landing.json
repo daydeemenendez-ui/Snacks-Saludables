@@ -292,8 +292,10 @@
     "button": "Yo también quiero empezar hoy"
   },
   "footer": {
-    "copyrightName": "Crecimiento Integral",
-    "copyrightSuffix": "· Todos los derechos reservados",
-    "finePrint": "Procesado por Hotmart · Compra 100% segura · Garantía 7 días"
+    "disclaimerLabel": "Política de Descargo de responsabilidad:",
+    "copyrightLine": "(c) 2026 – Ebook Barras saludables y Snack Nutritivo | Todos los derechos reservados",
+    "metaPolicyLabel": "Política de META:",
+    "metaPolicyText": "DESCARGO DE RESPONSABILIDAD IMPORTANTES: Este sitio no es parte del sitio web de Facebook o Meta, Inc. Además, este sitio no está respaldado por Facebook de ninguna manera. FACEBOOK es una marca registrada de META, Inc.",
+    "finePrint": "Copyright © 2026 Agenda Creative All rights reserved"
   }
 }
