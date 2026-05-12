@@ -959,11 +959,17 @@ function Landing() {
               className="h-9 w-auto object-contain bg-cream rounded-md px-2 py-1"
             />
           </div>
-          <p>
-            © {new Date().getFullYear()} {landing.footer.copyrightName}{" "}
-            {landing.footer.copyrightSuffix}
-          </p>
-          <p className="mt-2 text-xs">{landing.footer.finePrint}</p>
+          <div className="space-y-3 text-xs leading-relaxed text-secondary-foreground/70">
+            <p>
+              <span className="font-semibold text-secondary-foreground">{landing.footer.disclaimerLabel}</span>{" "}
+              {landing.footer.copyrightLine}
+            </p>
+            <p>
+              <span className="font-semibold text-secondary-foreground">{landing.footer.metaPolicyLabel}</span>{" "}
+              {landing.footer.metaPolicyText}
+            </p>
+            <p>{landing.footer.finePrint}</p>
+          </div>
         </div>
       </footer>
     </div>
