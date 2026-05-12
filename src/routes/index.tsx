@@ -274,6 +274,31 @@ function Landing() {
   }));
   const galleryImages = landing.gallery.imageKeys.map((k) => img(k));
 
+  useEffect(() => {
+    const targets = document.querySelectorAll<HTMLElement>(
+      "section, footer, [data-reveal]",
+    );
+    if (!targets.length) return;
+    if (typeof IntersectionObserver === "undefined") {
+      targets.forEach((el) => el.classList.add("reveal-in"));
+      return;
+    }
+    targets.forEach((el) => el.classList.add("reveal"));
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("reveal-in");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -60px 0px" },
+    );
+    targets.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, []);
+
   return (
     <div className="min-h-screen overflow-x-hidden">
       <div className="bg-secondary text-secondary-foreground">
