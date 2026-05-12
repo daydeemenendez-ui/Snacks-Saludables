@@ -55,8 +55,11 @@ import avatar1 from "@/assets/avatars/avatar-1.jpg";
 import avatar2 from "@/assets/avatars/avatar-2.jpg";
 import avatar3 from "@/assets/avatars/avatar-3.jpg";
 import avatar4 from "@/assets/avatars/avatar-4.jpg";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const heroAvatars = [avatar1, avatar2, avatar3, avatar4];
+const testimonioImgs = [testimonio1, testimonio2, testimonio3, testimonio4, testimonio5];
 
 const recipeMockups = [
   recipe1,
