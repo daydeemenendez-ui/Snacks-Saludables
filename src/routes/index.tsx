@@ -156,6 +156,7 @@ const benefitIcons = {
 } as const;
 
 export const Route = createFileRoute("/")({
+  codeSplitGroupings: [],
   component: Landing,
 });
 
