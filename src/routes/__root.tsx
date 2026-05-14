@@ -60,13 +60,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Aprende a preparar barras, brownies y snacks saludables sin azúcar. Megapack con 8 ebooks + bonos. Pago único, acceso de por vida.",
       },
-      { property: "og:title", content: "Megapack Barras Saludables — Recetario Premium" },
+      { property: "og:title", content: "Megapack Barras Saludables — Recetario Premium 80% OFF" },
       {
         property: "og:description",
         content:
           "OFERTA LIMITADA: Emprende con snacks saludables que ya se venden todos los días — 80% OFF solo hoy.",
       },
       { property: "og:type", content: "website" },
+      { name: "twitter:title", content: "Megapack Barras Saludables — Recetario Premium 80% OFF" },
+      { name: "description", content: "Snacks Saludables is a web application for creating and selling healthy snacks." },
+      { property: "og:description", content: "Snacks Saludables is a web application for creating and selling healthy snacks." },
+      { name: "twitter:description", content: "Snacks Saludables is a web application for creating and selling healthy snacks." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/4EbAeqnQb4XZa0QvruP4PqD9T1o2/social-images/social-1778792947827-pack-mockup-QRas7xGY.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/4EbAeqnQb4XZa0QvruP4PqD9T1o2/social-images/social-1778792947827-pack-mockup-QRas7xGY.webp" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
