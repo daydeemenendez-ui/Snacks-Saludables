@@ -1,51 +1,4 @@
 import { useEffect, useRef, useState, type PointerEvent } from "react";
-
-function AnimatedProgress({ target, label }: { target: number; label: string }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [value, setValue] = useState(0);
-  const started = useRef(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting && !started.current) {
-            started.current = true;
-            const duration = 1600;
-            const start = performance.now();
-            const tick = (now: number) => {
-              const t = Math.min(1, (now - start) / duration);
-              const eased = 1 - Math.pow(1 - t, 3);
-              setValue(Math.round(eased * target));
-              if (t < 1) requestAnimationFrame(tick);
-            };
-            requestAnimationFrame(tick);
-          }
-        });
-      },
-      { threshold: 0.4 },
-    );
-    io.observe(el);
-    return () => io.disconnect();
-  }, [target]);
-
-  return (
-    <div ref={ref} className="mt-6">
-      <div className="mb-1 flex justify-between text-xs text-muted-foreground">
-        <span>{label}</span>
-        <span className="font-bold text-primary">{value}%</span>
-      </div>
-      <div className="h-2 w-full overflow-hidden rounded-full bg-border">
-        <div
-          className="h-full rounded-full bg-primary transition-[width] duration-100 ease-out"
-          style={{ width: `${value}%` }}
-        />
-      </div>
-    </div>
-  );
-}
 import { createFileRoute } from "@tanstack/react-router";
 import {
   Check,
@@ -104,6 +57,53 @@ import avatar3 from "@/assets/avatars/avatar-3.jpg";
 import avatar4 from "@/assets/avatars/avatar-4.jpg";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+
+function AnimatedProgress({ target, label }: { target: number; label: string }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [value, setValue] = useState(0);
+  const started = useRef(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting && !started.current) {
+            started.current = true;
+            const duration = 1600;
+            const start = performance.now();
+            const tick = (now: number) => {
+              const t = Math.min(1, (now - start) / duration);
+              const eased = 1 - Math.pow(1 - t, 3);
+              setValue(Math.round(eased * target));
+              if (t < 1) requestAnimationFrame(tick);
+            };
+            requestAnimationFrame(tick);
+          }
+        });
+      },
+      { threshold: 0.4 },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [target]);
+
+  return (
+    <div ref={ref} className="mt-6">
+      <div className="mb-1 flex justify-between text-xs text-muted-foreground">
+        <span>{label}</span>
+        <span className="font-bold text-primary">{value}%</span>
+      </div>
+      <div className="h-2 w-full overflow-hidden rounded-full bg-border">
+        <div
+          className="h-full rounded-full bg-primary transition-[width] duration-100 ease-out"
+          style={{ width: `${value}%` }}
+        />
+      </div>
+    </div>
+  );
+}
 
 const heroAvatars = [avatar1, avatar2, avatar3, avatar4];
 const testimonioImgs = [testimonio1, testimonio2, testimonio3, testimonio4, testimonio5];
