@@ -226,7 +226,7 @@ function HeroPrimaryCta({ href, label }: { href: string; label: string }) {
       />
       <a
         href={href}
-        className={`relative z-10 inline-flex items-center justify-center overflow-hidden rounded-full px-8 py-[1.1rem] font-bold tracking-tight shadow-[0_10px_36px_-12px_oklch(0.32_0.06_50_/_0.4),var(--shadow-glow)] transition-[transform,box-shadow,background-color,border-color,color] duration-300 ease-out [transform-style:preserve-3d] will-change-transform active:scale-[0.98] motion-safe:animate-[hero-cta-bob_2.8s_ease-in-out_infinite] motion-reduce:animate-none sm:px-9 sm:py-5 ${
+        className={`relative z-10 inline-flex items-center justify-center overflow-hidden rounded-full px-8 py-[1.1rem] font-bold tracking-tight shadow-[0_10px_36px_-12px_oklch(0.32_0.06_50_/_0.4),var(--shadow-glow)] transition-[transform,box-shadow,background-color,border-color,color] duration-300 ease-out [transform-style:preserve-3d] will-change-transform active:scale-[0.98] sm:px-9 sm:py-5 ${
           over
             ? "border-accent/45 text-secondary shadow-[0_18px_44px_-12px_oklch(0.78_0.16_75_/_0.55)]"
             : "border-white/30 text-primary-foreground"
