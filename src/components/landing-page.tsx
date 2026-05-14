@@ -205,8 +205,8 @@ function HeroPrimaryCta({ href, label }: { href: string; label: string }) {
   return (
     <span
       ref={wrapRef}
-      className="group/cta relative inline-flex touch-manipulation motion-safe:animate-[hero-cta-bob_2.8s_ease-in-out_infinite] motion-reduce:animate-none"
-      style={{ perspective: "720px" }}
+      className="group/cta relative inline-flex touch-manipulation"
+      style={{ perspective: "720px", animation: "hero-cta-bob 2.4s ease-in-out infinite" }}
       onPointerEnter={onPointerEnter}
       onPointerDown={onPointerDown}
       onPointerLeave={onPointerLeave}
