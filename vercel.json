@@ -4,10 +4,5 @@
   "framework": "tanstack-start",
   "env": {
     "NODE_ENV": "production"
-  },
-  "functions": {
-    "src/server.ts": {
-      "runtime": "nodejs@20.x"
-    }
   }
 }
